@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LineBotHandsOnApplication {
 
-    @RequestMapping("/webhook")
+    @RequestMapping("/callback")
     public String helloWorld() {
         return "Hello world";
     }

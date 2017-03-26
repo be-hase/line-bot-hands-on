@@ -46,7 +46,7 @@ public class LineBotHandsOnApplication {
         this.objectMapper = objectMapper;
     }
 
-    @PostMapping("/webhook")
+    @PostMapping("/callback")
     public ResponseEntity<String> webhook(
             @RequestHeader("X-Line-Signature") final String headerSignature,
             @RequestBody final byte[] body
